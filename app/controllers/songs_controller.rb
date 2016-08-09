@@ -1,9 +1,14 @@
 class SongsController < ApplicationController
   before_action :set_song, only: [:show, :edit, :update, :destroy]
-
   # GET /songs
   # GET /songs.json
   def index
+    Song.reindex
+    if request.xhr?
+      render :json => Song.all.to_json
+    else
+      render :index
+    end
     @songs = Song.all
   end
 
