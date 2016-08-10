@@ -1,6 +1,7 @@
 ## React + Rails song CRUD interface
 
 Great article to follow along to [here](https://blog.skcript.com/building-a-live-search-page-with-reactjs-rails-and-elasticsearch-197f2650438b#.ikr3tgreo)
+
 *I had to change a few things from the tutorial in the code to get it to work, though.
 
 
